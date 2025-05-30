@@ -32,8 +32,10 @@ Ao utilizar o short link criado pelo programa será redirecionado para o link
 
 
 ---ENGLISH---
+
 URL Shortener
-Tools
+
+# Tools
 
     Spring
 
@@ -47,10 +49,11 @@ Tools
 
     Maven
 
-Controller
+# Controller
 
 Endpoint: https://localhost:8080/urls
-POST Method
+
+## POST Method
 
     The POST request was made using Postman.
 
@@ -64,6 +67,7 @@ DTO
 }
 
 The program returns a short URL that redirects to the correct link.
-GET Method
+
+## GET Method
 
 When using the short link created by the program, it redirects to the original link.
