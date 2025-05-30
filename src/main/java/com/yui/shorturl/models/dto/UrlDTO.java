@@ -1,5 +1,7 @@
 package com.yui.shorturl.models.dto;
 
+import com.yui.shorturl.models.entities.Url;
+
 public class UrlDTO {
 
     private String id;
@@ -10,6 +12,11 @@ public class UrlDTO {
     public UrlDTO(String id, String fullUrl) {
         this.id = id;
         this.fullUrl = fullUrl;
+    }
+
+    public UrlDTO(Url entity) {
+        this.id = entity.getId();
+        this.fullUrl = entity.getFullUrl();
     }
 
     public String getId() {
