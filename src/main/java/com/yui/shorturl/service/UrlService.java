@@ -23,7 +23,9 @@ public class UrlService {
 
         repository.insert(url);
 
-        return "http://localhost:8080/urls/" + url.getId();
+        String mainUrl = "http://localhost:8080/urls/";
+
+        return mainUrl + url.getId();
     }
 
     public UrlDTO returnLink(String id){
